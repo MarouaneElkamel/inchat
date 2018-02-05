@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #EAEAeA;" stylesheets="@../StyleSheets/material-fx-v0_3.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.FriendListController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="InChat">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#LogoutPressed" text="Logout" />
+              <MenuItem mnemonicParsing="false" onAction="#ClosePressed" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Navigation">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#ProfilePressed" text="Profile" />
+                  <MenuItem mnemonicParsing="false" onAction="#FriendSearchPressed" text="Friend search" />
+              <MenuItem mnemonicParsing="false" onAction="#ConversationPressed" text="Conversation" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#HelpPressed" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <JFXListView fx:id="MyTable" fixedCellSize="132.0" prefHeight="472.0" prefWidth="1280.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </JFXListView>
+   </center>
+</BorderPane>
