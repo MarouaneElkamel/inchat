@@ -1,3 +1,6 @@
 # inchat
-Projet summer 2017 proxym, Desktop social network
-Le fichier PDF comporte le rapport de stage.
+Internship 2017 summer proxym, 
+
+Inchat is a desktop social network created with javafx, hibernate and pure socket server.
+
+The pdf file rapport.pdf contains all the information needed about the projecct.
